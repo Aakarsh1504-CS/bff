@@ -6,7 +6,7 @@ const kycRoutes = require('./routes/kyc.routes');
 const cors = require('cors');
 
 app.use(express.json());
-app.us(express.urlencoded({ extended: true }));
+app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 const nonProtectedRoutes = [
@@ -21,6 +21,7 @@ app.use((req, res, next) => {
     if (nonProtectedRoutes.includes(req.path)) {
         next();
     }
+    next();
 });
 
 app.get('/v1/auth/login', (req, res, next) => {

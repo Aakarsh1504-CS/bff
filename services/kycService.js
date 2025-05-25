@@ -7,7 +7,7 @@ const getUserKyc = async () => {
       "x-internal-key": process.env.INTERNAL_API_KEY,
     },
   });
-  return response.data;
+  return response.data?.data;
 };
 
 module.exports = {
