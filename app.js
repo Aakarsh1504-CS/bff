@@ -8,11 +8,11 @@ const { initProducer } = require('./kafka');
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
-initProducer()
-  .catch(err => {
-    console.error('❌ Failed to connect Kafka producer', err);
-    process.exit(1);
-  });
+// initProducer()
+//   .catch(err => {
+//     console.error('❌ Failed to connect Kafka producer', err);
+//     process.exit(1);
+//   });
 const nonProtectedRoutes = [
     '/v1/auth/login',
     '/v1/auth/register',
