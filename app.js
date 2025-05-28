@@ -35,6 +35,7 @@ app.get('/v1/auth/register', (req, res, next) => {
     res.send('Register endpoint');
 });
 app.get('/v1/auth/forgot-password', (req, res, next) => {
+    console.log("forgot-pass");
     res.send('Forgot Password endpoint');
 });
 app.get('/v1/auth/reset-password', (req, res, next) => {
