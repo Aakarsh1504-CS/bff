@@ -29,6 +29,7 @@ app.use((req, res, next) => {
 });
 
 app.get('/v1/auth/login', (req, res, next) => {
+    console.log("Login")
     res.send('Login endpoint');
 });
 app.get('/v1/auth/register', (req, res, next) => {
