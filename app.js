@@ -13,6 +13,7 @@ app.use(cors());
 //     console.error('❌ Failed to connect Kafka producer', err);
 //     process.exit(1);
 //   });
+// Comment by praneeeth
 const nonProtectedRoutes = [
     '/v1/auth/login',
     '/v1/auth/register',
